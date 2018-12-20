@@ -193,11 +193,13 @@ and don't waste your global scope!
             'background-color': '#b2d6e2'
         }
     };
-    jQuery('body').interstitial(options);
+    jQuery('body').interstitial(opt);
 })();
 ```
 
-### Examples for any styles
+### Examples
+In projects index.html you get an _'living example'_. Please have a look there for implementation and behavior in browsers.
+
 #### Interstitial at right window border
 ```javascript
 (function(){
