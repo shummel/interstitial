@@ -6,6 +6,8 @@
  * @link http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/
  *
  * Extended for interstitial: @shummel
+ * Version 1.0.0.
+ * Date 2018/12/21
  */
 
 /**
@@ -135,7 +137,7 @@
                 that.$_adWrapper.append(getContent(url, $htmlAdWrapper));
             }
             else if(content != null){
-                that.$_adWrapper.append(content);
+                $htmlAdWrapper.append(content);
             }
             else {
                 bool = 0;

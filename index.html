@@ -6,7 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <style>
         * { box-sizing: border-box;}
-        body {background-color: #dfdfdf; margin: 0; overflow-x: hidden; position: relative;}
+        body {background-color: #dfdfdf; margin: 0; overflow-x: hidden; position: relative; font-family: fantasy;}
+        h3 { font-size: 3rem; margin:0;}
         .center   {text-align: center;}
     </style>
 </head>
@@ -19,10 +20,12 @@
 <script src="src/js/jquery.plugin.interstitial.js"></script>
 <script>
     (function(){
+        var adHtmlContent = '<h3 class="center">Hummelige Grüße!!! :-)</h3>'
+
         var opt = {
-            url: 'https://cdn.immonet.de/frontend-resources/4.7.1/immonet/img/logo_with_claim.svg',
+            content: adHtmlContent,
             css : {
-                'background-color': '#b2d6e2'
+                'background-color': '#cca330'
             }
         };
         jQuery('body').interstitial(opt);
