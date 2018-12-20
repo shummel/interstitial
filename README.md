@@ -1,10 +1,10 @@
 # Interstitial
 
-## SEO Factes for Interstials
+## SEO Facts
 First Google don't like interstitials - espacially at mobile devices!
 
-If you be aware any tipps, than you don't risk your page ranke where you use interstitials. 
-Otherwise your _expensive_ page will lose important ranking positions and follow traffic. 
+If you be aware any tipps, you don't risk your page ranke where you use interstitials. 
+Otherwise your _expensive_ page will lose important ranking positions and following traffic. 
 
 For that consider following **SEO Tipps:**
 
@@ -80,7 +80,7 @@ Example see below!
 #### url
 To add interstitials content via ajax.
 
-- required _(if no content is given; be aware HINT after content description)_
+- required _(or option: content)_
 - type: _string_
 - default: _empty_
 
@@ -94,7 +94,7 @@ To add interstitials content via ajax.
 ******
 #### content
 To add interstitials content via hard coded HTML Code.
-- required _(if no url is given)_
+- required _(or option: url)_
 - type: _string_
 - default: _empty_
 
@@ -109,7 +109,7 @@ To add interstitials content via hard coded HTML Code.
     jQuery('body').interstitial(options);
 ```
 
-**Be aware !!!**
+**BE AWARE!**
 ```
 - you need to give url OR content
 - if you give either url nor content, no interstial element will create
@@ -118,7 +118,7 @@ To add interstitials content via hard coded HTML Code.
 ******
 
 #### position
-Defined position of interstitial within window.
+Defined position of interstitial within window. Possible values are _bottom | top | right | left_
  
 - optional
 - type: _string_
@@ -136,6 +136,7 @@ If true, event listener will defined for _scroll_ (Desktop) and _touchmove_ (Mob
 
 #### exit
 Defined whether interstial will show when user move mouse near to top of window border.
+
 **HINT:** This event doesn't work at mobile devices!
 
 - optional
@@ -145,9 +146,9 @@ Defined whether interstial will show when user move mouse near to top of window 
 
 #### timer
 Defined time after interstitial will display.
-To remove this event set this option to _null_.
+To remove event set this option to _null_.
 
-**HINT:** Cause exit-event don't work at mobile devices, set this value! 
+**HINT:** You need this event cause exit-event don't work at mobile devices! 
 
 - optional
 - type: number
